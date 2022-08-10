@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<div th:replace="~{fragments/myheader1 :: text}"></div>
+
+<div class="card">
+    <div class="card-header">
+        <p class="h4 mb-2 text-center">Thêm Account</p>
+    </div>
+    <div class="card-body">
+        <form class="text-center border border-light p-5" th:object="${accountDto}" th:action="@{/backend/account/save}"  method="post">
+            <!--<input
+                    type = "text"
+                    name = "name"
+                    th:field = "*{name}"
+                    class = "form-control"
+                    placeholder="Tên sản phẩm"
+            />
+            <input
+                    type = "text"
+                    name = "name"
+                    th:field = "*{name}"
+                    class = "form-control"
+                    placeholder="Tên sản phẩm"
+            />
+            <input
+                    type = "text"
+                    name = "name"
+                    th:field = "*{name}"
+                    class = "form-control"
+                    placeholder="Tên sản phẩm"
+            />
+            <input
+                    type = "text"
+                    name = "name"
+                    th:field = "*{name}"
+                    class = "form-control"
+                    placeholder="Tên sản phẩm"
+            />
+            <input
+                    type = "text"
+                    name = "name"
+                    th:field = "*{name}"
+                    class = "form-control"
+                    placeholder="Tên sản phẩm"
+            />-->
+
+            <button class="btn btn-info btn-block" type="submit">add</button>
+        </form>
+
+    </div>
+</div>
+
+
+
+<div th:replace ="~{fragments/alljsatbtm :: alljsatbtm}"></div>
+</html>
